@@ -22,11 +22,21 @@ class Garden
 
 struct Flower {
     
+    //Variables
     var name : String
     var familia : String
     var age : Int
     var color : String
     
+    //Constructor
+    init( name: String,  familia : String, age : Int, color: String) {
+        self.name = name
+        self.familia = familia
+        self.age = age
+        self.color = color
+    }
+    
+    //Getter functions
     func getName()->String{
         return self.name
     }
@@ -39,4 +49,17 @@ struct Flower {
     func getColor()->String{
         return self.color
     }
+    
+    //Setter functions
+    mutating func setColor(_ newColor : String)
+    {
+        self.color = newColor
+    }
+    
+    mutating func setAge(_ newAge : Int)
+    {
+        self.age = newAge
+    }
+    
+    
 }
