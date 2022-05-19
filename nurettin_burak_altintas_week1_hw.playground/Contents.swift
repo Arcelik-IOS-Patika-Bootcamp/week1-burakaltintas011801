@@ -61,7 +61,7 @@ class Garden
                 flower_price = 20
             }
             
-        } else if flower_name == "Karanfil" {
+        } else if flower_name == "Clove" {
             flower_price = 30
         }else{
             flower_price = 10
@@ -147,9 +147,21 @@ enum Day
 
 var begonia = Flower(name: "Begonia", familia: "Begoniacease", age: 2, color: "Red")
 var daisy = Flower(name: "Daisy", familia: "Caricaceae", age: 1, color: "Yellow")
-var Hydrangea = Flower(name: "Hydrangea", familia: "Hydrangea", age: 2, color: "Purple")
+var hydrangea = Flower(name: "Hydrangea", familia: "Hydrangea", age: 2, color: "Purple")
 var rose    = Flower(name: "Rose", familia: "Brugmansia", age: 1, color: "White")
 var clove     = Flower(name: "Clove", familia: "Brugmansia", age: 1, color: "Red")
+
+
+var all_flowers : [Flower]
+all_flowers.append(begonia)
+all_flowers.append(daisy)
+all_flowers.append(hydrangea)
+all_flowers.append(rose)
+all_flowers.append(clove)
+
+
+
+
 
 
 
