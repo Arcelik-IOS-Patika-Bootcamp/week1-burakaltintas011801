@@ -30,7 +30,7 @@ class Garden
     }
     
     //Function that sells your plants and updates the number of flowers in your garden
-    func sellFlowers(flower_name : String )
+    func sellFlowers(flower_name : String, day : Day )
     {
         
         print("\(flower_name) is sold now.")
@@ -42,9 +42,25 @@ class Garden
         }else if flower_name == "Ortanca"{
             flower_price == 25
         }else if flower_name == "Gül" {
-            flower_price = 20
+            if day == .valentinesDay
+            {
+                flower_price = 15
+            }else{
+                flower_price = 20
+            }
         }else if flower_name == "Papatya" {
-            flower_price = 10
+            switch (day)
+            {
+            case .mothersDay :
+                flower_price = 5
+            case .valentinesDay:
+                flower_price = 25
+            case .otherDay :
+                flower_price = 20
+            default :
+                flower_price = 20
+            }
+            
         } else if flower_name == "Karanfil" {
             flower_price = 30
         }else{
@@ -117,4 +133,11 @@ struct Flower {
     
     
     
+}
+
+enum Day
+{
+    case mothersDay
+    case valentinesDay
+    case otherDay
 }
