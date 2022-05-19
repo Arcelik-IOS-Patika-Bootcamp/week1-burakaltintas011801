@@ -152,12 +152,13 @@ var rose    = Flower(name: "Rose", familia: "Brugmansia", age: 1, color: "White"
 var clove     = Flower(name: "Clove", familia: "Brugmansia", age: 1, color: "Red")
 
 
-var all_flowers : [Flower]
-all_flowers.append(begonia)
+var all_flowers : [Flower] = [begonia]
 all_flowers.append(daisy)
 all_flowers.append(hydrangea)
 all_flowers.append(rose)
 all_flowers.append(clove)
+
+
 
 
 
