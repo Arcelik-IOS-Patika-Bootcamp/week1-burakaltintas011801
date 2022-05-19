@@ -21,9 +21,22 @@ class Garden
 }
 
 struct Flower {
+    
     var name : String
     var familia : String
-    var age : String
+    var age : Int
     var color : String
     
+    func getName()->String{
+        return self.name
+    }
+    func getfamilia()->String{
+        return self.familia
+    }
+    func getAge()->Int{
+        return self.age
+    }
+    func getColor()->String{
+        return self.color
+    }
 }
