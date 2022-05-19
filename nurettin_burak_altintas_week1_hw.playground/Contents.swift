@@ -37,18 +37,18 @@ class Garden
         
         var flower_price = 0
         
-        if flower_name == "Begonya" {
+        if flower_name == "Begonia" {
             flower_price = 15
-        }else if flower_name == "Ortanca"{
+        }else if flower_name == "Hydrangea"{
             flower_price == 25
-        }else if flower_name == "Gül" {
+        }else if flower_name == "Rose" {
             if day == .valentinesDay
             {
                 flower_price = 15
             }else{
                 flower_price = 20
             }
-        }else if flower_name == "Papatya" {
+        }else if flower_name == "Daisy" {
             switch (day)
             {
             case .mothersDay :
@@ -135,9 +135,22 @@ struct Flower {
     
 }
 
+//Day enum that categorizes days
 enum Day
 {
     case mothersDay
     case valentinesDay
     case otherDay
 }
+
+
+
+var begonia = Flower(name: "Begonia", familia: "Begoniacease", age: 2, color: "Red")
+var daisy = Flower(name: "Daisy", familia: "Caricaceae", age: 1, color: "Yellow")
+var Hydrangea = Flower(name: "Hydrangea", familia: "Hydrangea", age: 2, color: "Purple")
+var rose    = Flower(name: "Rose", familia: "Brugmansia", age: 1, color: "White")
+var clove     = Flower(name: "Clove", familia: "Brugmansia", age: 1, color: "Red")
+
+
+
+
