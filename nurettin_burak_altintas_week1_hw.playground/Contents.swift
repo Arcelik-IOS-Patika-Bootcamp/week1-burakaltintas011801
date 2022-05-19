@@ -8,13 +8,13 @@ class Garden
     //Variables
     var owner : String
     var flowers : [Flower]
-    var number_of_flowers : Int
     
     //Constructors
-    init(_ owner : String, _ flowers: [Flower] , number_of_flowers : Int = 0) {
+    init(_ owner : String, _ flowers: [Flower]) {
         self.owner = owner
         self.flowers = flowers
-        self.number_of_flowers = number_of_flowers
+        
+        
     }
     
     //Functions
@@ -28,10 +28,10 @@ class Garden
     //Function that sells your plants and updates the number of flowers in your garden
     func sellFlowers(flower_name : String)
     {
-        print("\(flower_name) is sold now. The currenct number of flowers : \(number_of_flowers)")
+        print("\(flower_name) is sold now.")
     }
     
-    
+   
     
 }
 
