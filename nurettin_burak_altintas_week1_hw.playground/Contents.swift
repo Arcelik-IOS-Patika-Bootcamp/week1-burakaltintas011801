@@ -23,10 +23,14 @@ class Garden
     
     //Functions
     
+    func sayWelcome(){
+        print("Hello my name is \(self.owner) and Welcome to my garden :)")
+    }
+    
     //Functions that waters your plants
     func waterYourGarden()
     {
-            print("Your garden is watering...")
+            print("Your garden is being watered...")
     }
     
     //Function that sells your plants and updates the number of flowers in your garden
@@ -157,6 +161,22 @@ all_flowers.append(daisy)
 all_flowers.append(hydrangea)
 all_flowers.append(rose)
 all_flowers.append(clove)
+
+var nurettins_garden : Garden = Garden("Nurettin Burak Altıntaş", all_flowers, 25)
+
+nurettins_garden.sayWelcome()
+nurettins_garden.waterYourGarden()
+
+nurettins_garden.sellFlowers(flower_name: "Daisy", day: .mothersDay)
+nurettins_garden.showMyMoney()
+
+nurettins_garden.sellFlowers(flower_name: "Begonia", day: .otherDay)
+nurettins_garden.showMyMoney()
+
+nurettins_garden.sellFlowers(flower_name: "Rose", day: .valentinesDay)
+nurettins_garden.showMyMoney()
+
+
 
 
 
