@@ -8,11 +8,15 @@ class Garden
     //Variables
     var owner : String
     var flowers : [Flower]
+    var purse : Int
+    
+    
     
     //Constructors
-    init(_ owner : String, _ flowers: [Flower]) {
+    init(_ owner : String, _ flowers: [Flower] , _ purse : Int) {
         self.owner = owner
         self.flowers = flowers
+        self.purse = purse
         
         
     }
@@ -26,10 +30,44 @@ class Garden
     }
     
     //Function that sells your plants and updates the number of flowers in your garden
-    func sellFlowers(flower_name : String)
+    func sellFlowers(flower_name : String )
     {
+        
         print("\(flower_name) is sold now.")
+        
+        var flower_price = 0
+        
+        if flower_name == "Begonya" {
+            flower_price = 15
+        }else if flower_name == "Ortanca"{
+            flower_price == 25
+        }else if flower_name == "Gül" {
+            flower_price = 20
+        }else if flower_name == "Papatya" {
+            flower_price = 10
+        } else if flower_name == "Karanfil" {
+            flower_price = 30
+        }else{
+            flower_price = 10
+        }
+        
+        self.purse += flower_price
+        
     }
+    
+    //Returns the total money of the owner of the garden
+    func getPurse() -> Int
+    {
+        return self.purse
+    }
+    
+    //Shows the current money that owner of the garden has.
+    func showMyMoney()
+    {
+        print("Your current money is : \(self.purse) $.")
+    }
+    
+    
     
    
     
@@ -75,6 +113,8 @@ struct Flower {
     {
         self.age = newAge
     }
+    
+    
     
     
 }
