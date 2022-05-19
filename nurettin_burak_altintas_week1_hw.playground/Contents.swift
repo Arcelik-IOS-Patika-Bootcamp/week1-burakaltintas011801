@@ -87,6 +87,15 @@ class Garden
         print("Your current money is : \(self.purse) $.")
     }
     
+    func showMyFlowers(){
+        print("My flowers are: ")
+        for i in flowers
+        {
+            print("\(i.name) ,")
+        }
+                    
+    }
+    
     
     
    
@@ -175,6 +184,14 @@ nurettins_garden.showMyMoney()
 
 nurettins_garden.sellFlowers(flower_name: "Rose", day: .valentinesDay)
 nurettins_garden.showMyMoney()
+
+
+hydrangea.setColor("White")
+rose.setAge(2)
+
+nurettins_garden.showMyFlowers()
+
+
 
 
 
